@@ -10,14 +10,14 @@ app = FastAPI(docs_url=None, redoc_url=None)
 
 
 # Client Info (ENTER YOUR OWN INFO HERE!! Data varies from users and app types)
-FY_ID = os.getenv("FY_ID")  # Your fyers ID
-APP_ID_TYPE = "2"  # Keep default as 2, It denotes web login
-TOTP_KEY = os.getenv("TOTP_KEY")  #  TOTP secret is generated when we enable 2Factor TOTP from myaccount portal
-PIN = os.getenv("PIN")  # User pin for fyers account
-APP_ID = os.getenv("APP_ID")  # App ID from myapi dashboard is in the form appId-appType. Example - EGNI8CE27Q-100, In this code EGNI8CE27Q will be APP_ID and 100 will be the APP_TYPE
-REDIRECT_URI = "https://trade.fyers.in/api-login/redirect-uri/index.html"  # Redirect url from the app.
+FY_ID = os.getenv("FY_ID") 
+APP_ID_TYPE = "2"  
+TOTP_KEY = os.getenv("TOTP_KEY") 
+PIN = os.getenv("PIN")  
+APP_ID = os.getenv("APP_ID")  
+REDIRECT_URI = "https://trade.fyers.in/api-login/redirect-uri/index.html"  
 APP_TYPE = "100"
-APP_ID_HASH = os.getenv("APP_ID_HASH")  # SHA-256 hash of appId-appType:appSecret
+APP_ID_HASH = os.getenv("APP_ID_HASH") 
 
 
 # API endpoints
